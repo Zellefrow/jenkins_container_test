@@ -1,5 +1,5 @@
 echo "jenkins test"
-
+node("testAgent"){
 try {
 	stage("CHECKOUT") {
 		checkout scm
@@ -7,4 +7,5 @@ try {
 }
 finally {
 	echo "done"
+}
 }
